@@ -1,0 +1,11 @@
+;zero? ゼロ判定
+;remainder 除算の余り
+
+(define (product a b)
+  (if (zero? (remainder (* a b) 2))
+    "Even"
+    "Odd"))
+
+(let* ((a (read))
+      (b (read)))
+  (display (product a b)))
